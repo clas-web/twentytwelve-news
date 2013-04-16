@@ -1,0 +1,380 @@
+/*
+Theme Name: Twenty Twelve - CLAS News
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Template: twentytwelve
+Author: Crystal Barton
+Author URI: http://clas.uncc.edu
+Description: 
+Version: 1.1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: twentytwelve
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url( ../twentytwelve/style.css );
+
+
+	#masthead
+	{
+		padding:0px;
+	}
+
+	#masthead .header,
+	#masthead .menu
+	{
+		width:960px;
+		margin:0 auto;
+	}
+
+/* Header Title */
+
+	#masthead .header-wrapper
+	{
+		background-image:url('./images/header-bg.png');
+	}
+
+	#masthead .header
+	{
+		height:100px;
+		background-image:url('./images/header-logo-watermark.png');
+		background-repeat:no-repeat;
+		background-position:top left;
+	}
+
+	#masthead .header-logo
+	{
+		background-image:url('./images/logo.png');
+		height:100px;
+		width:128px;
+		background-repeat:no-repeat;
+		background-position:center center;
+		margin:0px 20px;
+		float:left;
+	}
+
+	#masthead .header-title
+	{
+		float:left;
+		margin-left:10px;
+		margin-top:24px;
+	}
+
+	#masthead .site-title
+	{
+		line-height:1;
+		margin-bottom:5px;
+	}
+
+	#masthead .site-description
+	{
+	}
+
+	#masthead .header-title a
+	{
+		color:silver;
+	}
+
+	#masthead .header-title a:hover
+	{
+		color:white;
+	}
+
+/* Header Navigation */
+
+	#masthead .menu-wrapper
+	{
+		width:auto;
+		background-image:url('./images/header-menu-bg.png');
+		border:none;
+	}
+
+	#masthead .menu
+	{
+		background-image:url('./images/header-menu-bg-center.png');
+		background-repeat: repeat-y;
+		background-position: top center;
+		border:none;
+	}
+
+	#masthead div.nav-menu > ul
+	{
+		border:none;
+	}
+
+	#masthead div.nav-menu > ul a
+	{
+		color:black;
+		padding:0 1.5em;
+	}
+
+	#masthead div.nav-menu > ul li
+	{
+		margin:0;
+	}
+
+	#masthead div.nav-menu > ul a:hover
+	{
+		background-color:#d9bf4d;
+	}
+
+/* Main Page content */
+
+	#page
+	{
+		padding:0;
+		margin:0 auto;
+		width:960px;
+	}
+
+	#main
+	{
+		padding:0;
+		margin:0;
+	}
+
+	#main > #primary,
+	#main > #secondary
+	{
+		margin:0;
+		padding:20px;
+	}
+
+/* Primary content */
+	
+	#main > #primary
+	{
+		width:700px;
+		margin-right:200px;
+	}
+
+/* Secondary sidebar */
+	
+	#main > #secondary
+	{
+		float:right;
+		width:200px;
+		margin-left:-220px;
+	}
+
+	#main > #secondary h3
+	{
+		margin:0;
+		padding:3px 10px;
+		background-color:#CCC;
+		border:solid 1px #999;
+		color:white;
+		color:black;
+	}
+
+	#main > #secondary li
+	{
+		border-bottom:solid 1px #999;
+		padding:3px 10px;
+	}
+
+
+	#searchform
+	{
+		text-align:center;
+	}
+
+	.widget-area .widget
+	{
+		margin-bottom:30px;
+	}
+
+
+
+@media screen and (min-width: 600px) and (max-width:960px)
+{
+
+/* Main Content container goes full screen */
+	
+	#masthead > .header-wrapper,
+	#masthead > .menu-wrapper
+	{
+		max-width:960px;
+		min-width:960px;
+	}
+
+	#page
+	{
+		border:none;
+		box-shadow:none;
+	}
+
+
+/* Header is no longer centered, but is left aligned */
+	
+	#masthead .header,
+	#masthead .menu
+	{
+		margin:0;
+	}	
+	
+}
+
+
+@media screen and (max-width:600px)
+{
+	
+/* Header is rearranged for mobile devices */
+	
+	#masthead .header
+	{
+		height:100px;
+		background-image:url('./images/header-logo-watermark-mobile.png');
+		background-repeat:no-repeat;
+		background-position:top center;
+		text-align:center;
+	}
+
+	#masthead .header-logo
+	{
+		background-image:url('./images/logo-mobile.png');
+		height:23px;
+		width:auto;
+		padding-top:10px;
+		background-repeat:no-repeat;
+		background-position:bottom center;
+		float:none;
+	}
+
+	#masthead .header-title
+	{
+		float:none;
+		margin:0;
+		margin-top:10px;
+	}
+
+	#masthead .site-title a
+	{
+		color:white;
+	}
+	
+	#masthead .site-title
+	{
+		line-height:1;
+		margin-bottom:5px;
+		font-size:1.5em;
+	}
+
+	#masthead .site-description
+	{
+		font-size:0.7em;
+		color:white;
+	}
+	
+	#masthead .header-wrapper,
+	#masthead .menu-wrapper,
+	#masthead .header,
+	#masthead .menu
+	{
+		width:auto;
+		margin:0;
+	}	
+
+
+/* Menu button is disabled and all menu items are displayed */
+	
+	.main-navigation
+	{
+		padding:5px;
+	}
+	
+	.main-navigation div.nav-menu > ul li
+	{
+		margin:0;
+	}
+	
+	.main-navigation div.nav-menu > ul li a
+	{
+		color:black;
+		background-color:transparent;
+		padding:0 1.5em;
+		display:block;
+		padding:3px;
+		text-decoration:none;
+		margin-top:1px;
+		text-transform: uppercase;
+	}
+	
+	.main-navigation div.nav-menu > ul li.current_page_item
+	{
+		font-weight:bold;
+	}
+
+	.main-navigation div.nav-menu > ul li a:hover
+	{
+		background-color:#d9bf4d;
+	}
+	
+	ul.nav-menu
+	{
+		display:none;
+	}
+	
+	.main-navigation div.nav-menu > ul,
+	.main-navigation div.nav-menu > ul.nav-menu,
+	.main-navigation div.nav-menu > ul.nav-menu.toggled-on
+	{
+		display:block;
+	}
+
+	.menu-toggle
+	{
+		border:none;
+		background:none;
+		border-radius:0px;
+		padding:10px;
+		box-shadow:none;
+		display:none;
+	}
+	
+	.menu-toggle.toggled-on
+	{
+		background:none;
+		box-shadow:none;
+	}
+
+	.menu-toggle:hover
+	{
+		background:none;
+	}
+		
+	.assistive-text:hover
+	{
+		border:none;
+		background:none;
+	}
+
+/* Primary content takes up whole width and secondary sidebar drops down below. */
+	
+	#page
+	{
+		width:auto;
+	}
+	
+	#main > #primary
+	{
+		margin-right:0px;
+		display:block;
+		width:auto;
+	}
+
+	#main > #secondary
+	{
+		float:none;
+		width:0px;
+		margin-left:0px;
+		display:block;
+		width:auto;
+		padding-top:0px;
+	}
+	
+}
+
